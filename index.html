@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+AbdulYasarArafath– Film Editor</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="images/image copy 3.png">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#Movie Project">Movie Project</a></li>
+     <li><a href="#short-films">short-films</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+     
+   
+   
+  </ul>
+</nav>
+
+<header id="home" class="home">
+  <div class="home-container">
+    
+    <!-- LEFT SIDE IMAGE -->
+    <div class="home-image">
+      <img src="images/image copy.png" alt="Riyash">
+    </div>
+
+    <!-- RIGHT SIDE CONTENT -->
+    <div class="home-content">
+      <h1>Abdul Yasar Arafath– Film Editor</h1>
+      <p>Crafting stories through cuts</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>I am a passionate film editor with experience in cinematic storytelling. I worked as an Assistant Editor in the movie "Amaran".To perceive a career in a renowned firm with dedicated efforts and
+to associate myself with an organization that gives me a chance to
+update my knowledge.</p>
+  </div>
+
+  <div class="container">
+    <h2>Knowing Software's</h2>
+        
+•     Avid Media Composer<br>
+•     Final Cut Pro<br>
+•     Premiere Pro<br>
+•     Photoshop (Basic) <br>
+•     After Effects (Basic) <br>
+•     Davinci Resolve (Basic) </p>
+  </div>
+</section>
+
+ <!--movie projects-->
+<section id="Movie Project">
+  <h1>My Movie Projects</h1>
+
+  <div class="gallery">
+    <div class="movie-card">
+      <img src="images/amaran.png" alt="Amaran">
+      <p class="movie-title">Amaran</p>
+    </div>
+
+    <div class="movie-card">
+      <img src="soppana sundari.png" alt="Soppana Sundhari">
+      <p class="movie-title">Soppana Sundhari</p>
+    </div>
+
+    <div class="movie-card">
+      <img src="images/kannagi.png" alt="Kannagi">
+      <p class="movie-title">Kannagi</p>
+    </div>
+    <div class="movie-card">
+      <img src="Varnashramam.png" alt="Varnashramam">
+      <p class="movie-title">Varnashramam</p>
+    </div>
+     <div class="movie-card">
+      <img src="images/Goli Soda 1.5.png" alt="Goli Soda 1.5">
+      <p class="movie-title">Goli Soda 1.5</p>
+    </div>
+
+      <div class="movie-card">
+      <img src="signal.jpeg" alt="signal">
+      <p class="movie-title">Signal</p>
+    </div>
+
+      <div class="movie-card">
+      <img src="images/gods.png" alt="signal">
+      <p class="movie-title">Gods & Soldiers</p>
+    </div>
+
+    <div class="movie-card">
+      <img src="images/arun.png" alt="Director Arun Chidambaram Untitled">
+      <p class="movie-title">Arun Chidambaram Untitled</p>
+    </div>
+    
+    </div>
+    <script>
+  const cards = document.querySelectorAll(".movie-card");
+  
+
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      } else {
+        entry.target.classList.remove("show"); // hides again when scrolling up
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  cards.forEach((card) => {
+    observer.observe(card);
+  });
+</script>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <h2>Services</h2>
+    <div class="services">
+      <div class="card">Film Editing</div>
+      <div class="card">Music Video Editing</div>
+      <div class="card">YouTube Editing</div>
+      <div class="card">Color Grading</div>
+      <div class="card">Motion Graphics</div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="container">
+    <h2>Achievements</h2>
+    <p>Assistant Editor - Amaran Movie <br>I am honored to have received an award for my work as Assistant Editor on “Amaran”, which successfully completed 100 days in theaters. Working alongside industry stalwarts like Kamal Haasan and SK was an incredible learning experience, allowing me to contribute to a project that resonated deeply with audiences. This recognition reflects not just the success of the film, but also the dedication, creativity, and precision required behind the scenes to bring the director’s vision to life.</p>
+    <img src="images/kamal.jpeg" class="achievement">
+  </div>
+  <script>
+  const elements = document.querySelectorAll(
+    "#achievements p, #achievements .achievement"
+  );
+
+  const observer1 = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add("show");
+        }, index * 300);
+      } else {
+        entry.target.classList.remove("show");
+      }
+    });
+  }, {
+    threshold: 0.3
+  });
+
+  elements.forEach((el) => observer.observe(el));
+</script>
+</section>
+
+
+<!-- short-films -->
+<section class="short-films" id="short-films">
+    <h2>Short Films</h2>
+
+    <div class="film-container">
+
+        <!-- Film 1 (YouTube) -->
+        <div class="film-card">
+            <h3>Paper Rocket(2024)<br>(child marriage act)</h3>
+             <p>Director - Gokul Ramadass</p>
+        <iframe src="https://www.youtube.com/embed/x7N9VRKdA9s?si=0a5l_gSRFA2LOK21" title="YouTube video player" frameborder="0" ></iframe>
+        </div>
+
+        <!-- Film 2 (With Image) -->
+<div class="film-card">
+    <h3>Jail Short Film (2025)</h3>
+    <p>Director- Thavaseelan</p>
+    <br>
+
+    <!-- Add your image here -->
+    <img src="images/Screenshot 2026-03-31 at 8.09.46 PM.png" alt="Devolution Film Poster" class="film-image">
+</div>
+
+        <!-- Film 2 (Text only) -->
+        <div class="film-card">
+            <h3>Devolution (2025)<br>Director-Dhamodharan</h3>
+            <p>LV Prasad Film Institute Student</p>
+        </div>
+
+        <!-- Film 3 (Text only) -->
+        <div class="film-card">
+            <h3>Story Time (2025)<br>Director-Parthi Selva </h3>
+            <p>LV PRASAD STUDENT PROJECT</p>
+        </div>
+
+       
+
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section>
+  <div class="container">
+    <h2>Testimonials</h2>
+    <div class="testimonials">
+      <div class="card">"Great editing skills!"</div>
+      <div class="card">"Professional and creative."</div>
+       <div class="card">"Strong in Photography and Cinematography!"</div>
+      <div class="card">"Good Communication Skills."</div>
+       <div class="card">"Quick Learner and Good Interpersonal Skills"</div>
+      <div class="card">" Ready to take responsibility."</div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+  <h2>Contact</h2>
+  <form class="contact" id="contact-form">
+    
+    <input type="text" name="name" placeholder="Your Name" required>
+    
+    <input type="email" name="email" placeholder="Your Email" required>
+    
+    <textarea name="message" placeholder="Message" required></textarea>
+
+    <input type="hidden" name="_captcha" value="false">
+    
+    <button type="submit">Send</button>
+    
+    <p id="status"></p>
+
+</form>
+
+  <script>
+const form = document.getElementById("contact-form");
+const status = document.getElementById("status");
+
+form.addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+
+    try {
+        const response = await fetch("https://formspree.io/f/xdapavgz", {
+            method: "POST",
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            status.innerHTML = "✅ Message sent successfully!";
+            form.reset(); // clear fields
+        } else {
+            status.innerHTML = "❌ Failed to send. Try again.";
+        }
+    } catch (error) {
+        status.innerHTML = "⚠️ Error sending message.";
+    }
+});
+setTimeout(() => {
+    status.innerHTML = "";
+}, 3000);
+</script>
+</div>
+   <div class="contact-info">
+  <p>Email: <a href="mailto:abdulyasararafath@gmail.com">abdulyasararafath@gmail.com</a></p>
+  
+  <p>Instagram: <a href="https://www.instagram.com/_abdulkaja_?utm_source=ig_web_button_share_sheet" target="_blank">_abdulkaja_</a></p>
+  
+  <p>WhatsApp: <a href="https://wa.me/917667118386" target="_blank">7667118386</a></p>
+</div>
+</section>
+
+
+
+<footer>
+  <p>© 2026 CREATED BY RIYASHBASHA || 9994889899 || riyashbasha06@gmail.com</p>
+</footer>
+
+</body>
+</html>
